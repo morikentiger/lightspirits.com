@@ -499,14 +499,6 @@ a {
 }
 
 /* Responsive */
-@media (min-width: 769px) {
-
-  /* Hide line break on desktop */
-  .mobile-break {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5rem;

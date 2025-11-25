@@ -30,27 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Glitch Text Transformation
-  const glitchText = document.getElementById('glitch-text');
-
-  if (glitchText) {
+  // Text switch with red color and flicker effect
+  const heroText = document.getElementById('hero-text');
+  if (heroText) {
     setTimeout(() => {
-      // Start intense flickering
-      glitchText.classList.add('transforming');
-
+      // Start flicker animation
+      heroText.classList.add('flicker');
+      // After short flicker, change text and set red color
       setTimeout(() => {
-        // Change text with line break for mobile (CSS controls visibility)
-        const newText = 'らいと<span class="mobile-break"><br></span>すぴりっつ';
-        glitchText.innerHTML = newText;
-        glitchText.setAttribute('data-text', 'らいと すぴりっつ');
-
-        // Remove intense flicker but keep subtle glitch or remove entirely
-        // Here we remove the transforming class to stop the intense flicker
-        glitchText.classList.remove('transforming');
-
-        // Optional: Remove glitch effect entirely after transformation for a clean look
-        // glitchText.classList.remove('glitch');
-      }, 1500); // Duration of intense flicker before text change
-    }, 3000); // Initial delay before effect starts
+        heroText.innerHTML = 'らいと<br>すぴりっつ';
+        heroText.setAttribute('data-text', 'らいと&#10;すぴりっつ');
+        heroText.style.color = 'var(--color-red)';
+        heroText.classList.remove('flicker');
+      }, 500); // flicker duration
+    }, 3000);
   }
 });

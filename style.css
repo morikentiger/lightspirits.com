@@ -20,6 +20,7 @@ body {
   font-family: var(--font-main);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Typography */
@@ -435,15 +436,25 @@ a {
 
 @media (max-width: 480px) {
   .glitch {
-    font-size: 1rem;
-    letter-spacing: 0.02em;
+    /* Use viewport width to ensure it fits */
+    font-size: min(1rem, 5.5vw);
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 393px) {
+
+  /* iPhone 16 and similar */
+  .glitch {
+    font-size: min(0.85rem, 5vw);
+    letter-spacing: 0;
   }
 }
 
 @media (max-width: 360px) {
   .glitch {
-    font-size: 0.9rem;
-    letter-spacing: 0.01em;
+    font-size: min(0.75rem, 4.5vw);
+    letter-spacing: 0;
   }
 }
 

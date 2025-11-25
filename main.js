@@ -41,9 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         // Change text with line break for mobile
         const isMobile = window.innerWidth <= 600;
-        const newText = isMobile ? "らいと<br>すぴりっつ" : "らいとすぴりっつ";
+        const newText = isMobile
+          ? 'らいと<span class="mobile-break"><br></span>すぴりっつ'
+          : 'らいとすぴりっつ';
         glitchText.innerHTML = newText;
-        glitchText.setAttribute('data-text', isMobile ? "らいと すぴりっつ" : "らいとすぴりっつ");
+        glitchText.setAttribute('data-text', isMobile ? 'らいと すぴりっつ' : 'らいとすぴりっつ');
 
         // Remove intense flicker but keep subtle glitch or remove entirely
         // Here we remove the transforming class to stop the intense flicker

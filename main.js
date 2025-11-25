@@ -39,10 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
       glitchText.classList.add('transforming');
 
       setTimeout(() => {
-        // Change text
-        const newText = "らいとすぴりっつ";
-        glitchText.textContent = newText;
-        glitchText.setAttribute('data-text', newText);
+        // Change text with line break for mobile
+        const isMobile = window.innerWidth <= 600;
+        const newText = isMobile ? "らいと<br>すぴりっつ" : "らいとすぴりっつ";
+        glitchText.innerHTML = newText;
+        glitchText.setAttribute('data-text', isMobile ? "らいと すぴりっつ" : "らいとすぴりっつ");
 
         // Remove intense flicker but keep subtle glitch or remove entirely
         // Here we remove the transforming class to stop the intense flicker
@@ -54,3 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Initial delay before effect starts
   }
 });
+```

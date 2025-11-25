@@ -55,4 +55,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Initial delay before effect starts
   }
 });
-```

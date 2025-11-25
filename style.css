@@ -434,11 +434,19 @@ a {
   }
 }
 
+@media (max-width: 600px) {
+
+  /* Apply to devices wider than iPhone 16 for safety margin */
+  .glitch {
+    font-size: min(0.9rem, 5vw);
+    letter-spacing: 0;
+  }
+}
+
 @media (max-width: 480px) {
   .glitch {
-    /* Use viewport width to ensure it fits */
-    font-size: min(1rem, 5.5vw);
-    letter-spacing: 0.01em;
+    font-size: min(0.85rem, 4.8vw);
+    letter-spacing: 0;
   }
 }
 
@@ -446,14 +454,14 @@ a {
 
   /* iPhone 16 and similar */
   .glitch {
-    font-size: min(0.85rem, 5vw);
+    font-size: min(0.8rem, 4.5vw);
     letter-spacing: 0;
   }
 }
 
 @media (max-width: 360px) {
   .glitch {
-    font-size: min(0.75rem, 4.5vw);
+    font-size: min(0.75rem, 4.2vw);
     letter-spacing: 0;
   }
 }

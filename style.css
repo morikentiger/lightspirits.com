@@ -91,6 +91,27 @@ a {
   max-width: 300px;
   height: auto;
   filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2));
+  animation: flame-flicker 2s ease-in-out infinite;
+}
+
+@keyframes flame-flicker {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.2)) drop-shadow(0 0 10px rgba(208, 0, 0, 0.4)) hue-rotate(0deg) brightness(1);
+  }
+
+  25% {
+    filter: drop-shadow(0 0 25px rgba(212, 175, 55, 0.3)) drop-shadow(0 0 15px rgba(208, 0, 0, 0.6)) hue-rotate(5deg) brightness(1.1);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 18px rgba(212, 175, 55, 0.25)) drop-shadow(0 0 12px rgba(208, 0, 0, 0.5)) hue-rotate(-5deg) brightness(0.95);
+  }
+
+  75% {
+    filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.28)) drop-shadow(0 0 14px rgba(208, 0, 0, 0.55)) hue-rotate(3deg) brightness(1.05);
+  }
 }
 
 .hero-title {

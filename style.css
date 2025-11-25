@@ -108,6 +108,16 @@ a {
   color: var(--color-gold);
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name-ja {
+  font-size: 2rem;
+  color: var(--color-white);
+  font-family: 'Shippori Mincho', serif;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 /* Scroll Indicator */

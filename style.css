@@ -499,7 +499,7 @@ a {
 }
 
 /* Responsive */
-@media (min-width: 601px) {
+@media (min-width: 769px) {
 
   /* Hide line break on desktop */
   .mobile-break {
@@ -522,7 +522,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   /* Allow line breaks on mobile and disable pseudo-elements */
   .glitch {

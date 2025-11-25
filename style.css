@@ -80,6 +80,12 @@ a {
   align-items: center;
   text-align: center;
   background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+  overflow: visible;
+}
+
+.hero-content {
+  overflow: visible;
+  width: 100%;
 }
 
 .logo-container {
@@ -118,10 +124,15 @@ a {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   line-height: 1.4;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title span {
-  display: block;
+  display: inline-block;
 }
 
 .hero-subtitle {

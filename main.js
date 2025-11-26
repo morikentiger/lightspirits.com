@@ -45,4 +45,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 500); // flicker duration
     }, 3000);
   }
+  // Contact Form Handling
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const company = document.getElementById('company').value;
+      const email = document.getElementById('email').value;
+      const category = document.getElementById('category').value;
+      const message = document.getElementById('message').value;
+
+      const subject = `[お問い合わせ] ${category} - ${name}様`;
+      const body = `
+お名前: ${name}
+貴社名: ${company}
+メールアドレス: ${email}
+お問い合わせ項目: ${category}
+
+お問い合わせ内容:
+${message}
+      `.trim();
+
+      const mailtoLink = `mailto:kuromoriken@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoLink;
+    });
+  }
 });

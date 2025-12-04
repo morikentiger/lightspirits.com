@@ -276,6 +276,29 @@ a {
   margin-bottom: 0.5rem;
 }
 
+.hero-founder {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  letter-spacing: 0.15em;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-founder::before,
+.hero-founder::after {
+  content: '―';
+  margin: 0 0.8rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
 .hero-name-ja {
   font-size: 2rem;
   color: var(--color-white);
@@ -451,6 +474,14 @@ a {
   background-color: #000;
   color: #666;
   font-size: 0.9rem;
+}
+
+.footer-founder {
+  color: var(--color-gold);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
 }
 
 /* Animations */
@@ -1116,7 +1147,7 @@ a {
   .contact-form {
     padding: 1.5rem;
   }
-  
+
   .contact-link-item {
     display: flex;
     margin: 1rem 0;

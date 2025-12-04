@@ -576,7 +576,13 @@ a {
 
   /* Move scroll indicator down to avoid overlap */
   .scroll-indicator {
-    bottom: 1rem;
+    bottom: 0.5rem;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0.5;
+  }
+
+  .scroll-indicator .line {
+    height: 40px;
   }
 }
 

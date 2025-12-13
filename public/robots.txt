@@ -1,8 +1,8 @@
 # らいとすぴりっつ robots.txt
-# https://lightspirits.com/
+# https://light-spirits.jp/
 
 User-agent: *
 Allow: /
 
 # サイトマップの場所
-Sitemap: https://lightspirits.com/sitemap.xml
+Sitemap: https://light-spirits.jp/sitemap.xml

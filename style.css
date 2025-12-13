@@ -1160,3 +1160,501 @@ a {
     justify-content: center;
   }
 }
+
+/* ====================================
+   Hero Description (1文定義)
+   ==================================== */
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  margin: 1.5rem 0;
+  opacity: 0.9;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+}
+
+/* ====================================
+   Services Section (対応できること)
+   ==================================== */
+.services {
+  background-color: var(--color-black-light);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--color-black);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 3px solid var(--color-gold);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 10px 30px rgba(208, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-card .card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* ====================================
+   Works Section (実績・制作物)
+   ==================================== */
+.works {
+  background-color: var(--color-black);
+}
+
+.work-item {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-item:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.work-item.featured {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1f1a14 100%);
+}
+
+.work-info {
+  text-align: center;
+}
+
+.work-label {
+  display: inline-block;
+  background: var(--color-gold);
+  color: var(--color-black);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.work-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.work-item h3 a {
+  color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+.work-item h3 a:hover {
+  color: var(--color-gold);
+}
+
+.work-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.work-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .work-item {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .work-item h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ====================================
+   Works Detail Page (召喚将棋ページ等)
+   ==================================== */
+
+/* ナビゲーション */
+.page-nav {
+  padding: 1rem 2rem;
+  background: var(--color-black);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-home {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav-home:hover {
+  opacity: 0.7;
+}
+
+/* ワークヒーロー */
+.work-hero {
+  padding: 6rem 2rem 4rem;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+  text-align: center;
+}
+
+.work-hero .work-label {
+  display: inline-block;
+  background: var(--color-gold);
+  color: var(--color-black);
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.work-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.work-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
+}
+
+/* イントロセクション */
+.work-intro {
+  background: var(--color-black-light);
+  padding: 4rem 2rem;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  line-height: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.game-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.meta-item {
+  text-align: center;
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  margin-bottom: 0.3rem;
+}
+
+.meta-value {
+  font-size: 1rem;
+}
+
+/* 各セクション共通 */
+.work-feature,
+.work-comparison,
+.work-howto,
+.work-play,
+.work-background,
+.work-credit,
+.work-links {
+  padding: 4rem 2rem;
+}
+
+.work-feature {
+  background: var(--color-black);
+}
+
+.work-comparison {
+  background: var(--color-black-light);
+}
+
+.work-howto {
+  background: var(--color-black);
+}
+
+.work-play {
+  background: var(--color-black-light);
+}
+
+.work-background {
+  background: var(--color-black);
+}
+
+.work-credit {
+  background: var(--color-black-light);
+}
+
+.work-links {
+  background: var(--color-black);
+}
+
+.work-feature h2,
+.work-comparison h2,
+.work-howto h2,
+.work-play h2,
+.work-background h2,
+.work-credit h2,
+.work-links h2 {
+  font-size: 1.8rem;
+  color: var(--color-gold);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.work-howto h3,
+.work-background h3 {
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin: 2rem 0 1rem;
+}
+
+/* 特徴リスト */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.feature-list li {
+  padding: 0.8rem 0 0.8rem 2rem;
+  position: relative;
+  border-left: 2px solid var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-text {
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+/* 比較表 */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.comparison-table td:first-child {
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.comparison-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* プレイボタン */
+.play-button {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  background: var(--color-gold);
+  color: var(--color-black);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 2rem 0;
+}
+
+.play-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+}
+
+.platform-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.platform-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.platform-info li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  opacity: 0.8;
+}
+
+/* コンセプト引用 */
+.concept-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-gold);
+  border-left: 3px solid var(--color-gold);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* 制作情報 */
+.credit-table {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.credit-row {
+  display: flex;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.credit-label {
+  width: 40%;
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.credit-value {
+  width: 60%;
+}
+
+.credit-value a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.credit-value a:hover {
+  color: var(--color-gold);
+}
+
+/* 関連リンク */
+.related-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.related-links li {
+  margin: 1rem 0;
+}
+
+.related-links a {
+  color: var(--color-white);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.related-links a:hover {
+  color: var(--color-gold);
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .work-hero h1 {
+    font-size: 2rem;
+  }
+
+  .lead-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .game-meta {
+    gap: 1rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .play-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .credit-row {
+    flex-direction: column;
+  }
+
+  .credit-label,
+  .credit-value {
+    width: 100%;
+  }
+
+  .credit-label {
+    margin-bottom: 0.3rem;
+  }
+}

@@ -5,7 +5,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/logo.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Spirits | らいとすぴりっつ</title>
+
+    <!-- SEO最適化 -->
+    <title>らいとすぴりっつ | Webサイト制作・ゲーム開発・デジタル化支援</title>
+    <meta name="description" content="らいとすぴりっつは、Webサイト制作、オリジナルゲーム開発、デジタル化支援を行う日本在住の個人クリエイティブプロジェクトです。代表・森田健太。">
+    <meta name="keywords" content="らいとすぴりっつ,Light Spirits,森田健太,Webサイト制作,ゲーム開発,召喚将棋,デジタル化支援">
+
+    <!-- OGP（SNSシェア用） -->
+    <meta property="og:title" content="らいとすぴりっつ | Webサイト制作・ゲーム開発・デジタル化支援">
+    <meta property="og:description" content="Webサイト制作、オリジナルゲーム開発、デジタル化支援を行う個人クリエイティブプロジェクト">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lightspirits.com/">
+    <meta property="og:image" content="https://lightspirits.com/logo.jpg">
+    <meta property="og:site_name" content="らいとすぴりっつ">
+    <meta name="twitter:card" content="summary">
+
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,17 +34,26 @@
         <section id="hero" class="section hero">
             <div class="hero-content">
                 <div class="logo-container">
-                    <img src="/logo.jpg" alt="Light Spirits Logo" class="main-logo" />
+                    <img src="/logo.jpg" alt="らいとすぴりっつ ロゴ" class="main-logo" />
                     <!-- Flickering flame layers -->
                     <img src="/flame_red.png" alt="" class="flame-layer flame-layer-1" aria-hidden="true" />
                     <img src="/flame_red.png" alt="" class="flame-layer flame-layer-2" aria-hidden="true" />
                     <img src="/flame_red.png" alt="" class="flame-layer flame-layer-3" aria-hidden="true" />
                 </div>
+
+                <!-- 1. キャッチコピー（思想）+ 業種ワード -->
                 <h1 class="hero-title">
-                    <span id="hero-text" data-text="人々の魂に&#10;火を灯す">人々の魂に<br>火を灯す</span>
+                    <span>対話とテクノロジーで<br>人の心に火を灯す<br>クリエイティブプロジェクト</span>
                 </h1>
-                <p class="hero-subtitle fade-in delay-2">Light Spirits</p>
-                <p class="hero-founder fade-in delay-3">代表・森田健太</p>
+
+                <!-- 2. 1文定義（業種・役割）-->
+                <p class="hero-description fade-in delay-1">
+                    らいとすぴりっつは、Webサイト制作、オリジナルゲーム開発、<br>
+                    デジタル化支援を行う日本在住の<br>個人クリエイティブプロジェクトです。
+                </p>
+
+                <!-- 運営者 -->
+                <p class="hero-founder fade-in delay-2">代表・森田健太（もりけん）</p>
             </div>
             <div class="scroll-indicator">
                 <span>Scroll</span>
@@ -38,190 +61,152 @@
             </div>
         </section>
 
-        <!-- Philosophy Section -->
-        <section id="philosophy" class="section philosophy">
+        <!-- Services Section（対応できること） -->
+        <section id="services" class="section services">
             <div class="container">
-                <h2 class="section-title">Philosophy</h2>
-                <div class="philosophy-grid">
-                    <div class="philosophy-item reveal">
-                        <h3>志</h3>
-                        <p class="philosophy-text">対話による勇気づけで<br>あなたを笑顔に</p>
+                <h2 class="section-title">対応できること</h2>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <div class="card-icon">🎮</div>
+                        <h3>オリジナルゲーム開発</h3>
+                        <p>ブラウザで遊べるオリジナルゲームを企画・開発しています</p>
                     </div>
-                    <div class="philosophy-item reveal">
-                        <h3>座右の銘</h3>
-                        <p class="philosophy-text">楽しんだもの＝価値</p>
+                    <div class="service-card reveal">
+                        <div class="card-icon">🌐</div>
+                        <h3>Webサイト制作</h3>
+                        <p>個人・小規模事業者向けのWebサイトを制作します</p>
                     </div>
-                    <div class="philosophy-item reveal">
-                        <h3>精神</h3>
-                        <p class="philosophy-text">人々の魂に火を灯す</p>
+                    <div class="service-card reveal">
+                        <div class="card-icon">⚡</div>
+                        <h3>デジタル化・業務効率化支援</h3>
+                        <p>ツール導入や業務フローの改善をサポートします</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Business Section -->
-        <section id="business" class="section business">
+        <!-- Works Section（実績・代表作） -->
+        <section id="works" class="section works">
             <div class="container">
-                <h2 class="section-title">Business</h2>
-                <div class="business-grid">
-                    <div class="business-card reveal">
-                        <div class="card-icon">AI</div>
-                        <h3>Artificial Intelligence</h3>
-                        <p>先端技術で未来を拓く</p>
-                    </div>
-                    <div class="business-card reveal">
-                        <div class="card-icon">Robot</div>
-                        <h3>Robotics</h3>
-                        <p>人と共存するテクノロジー</p>
-                    </div>
-                    <div class="business-card reveal">
-                        <div class="card-icon">Game</div>
-                        <h3>Game Development</h3>
-                        <p>遊び心と感動を創造する</p>
-                    </div>
-                    <div class="business-card reveal">
-                        <div class="card-icon">Space</div>
-                        <h3>Space Industry</h3>
-                        <p>未知なる領域への探求</p>
+                <h2 class="section-title">実績・制作物</h2>
+
+                <!-- 代表作：召喚将棋 -->
+                <div class="work-item featured reveal">
+                    <div class="work-info">
+                        <span class="work-label">代表作</span>
+                        <h3>
+                            <a href="/works/summon-shogi/">
+                                召喚将棋
+                            </a>
+                        </h3>
+                        <p class="work-description">
+                            将棋をベースにしたオリジナル対戦ゲーム。<br>
+                            駒を「召喚」する独自ルールを特徴としています。
+                        </p>
+                        <span class="work-category">オリジナルゲーム</span>
                     </div>
                 </div>
+
+                <!-- その他の制作物 -->
+                <div class="work-item reveal">
+                    <div class="work-info">
+                        <h3>
+                            <a href="https://morikentiger.github.io/BreakBlockBuild/" target="_blank"
+                                rel="noopener noreferrer">
+                                BreakBlockBuild
+                            </a>
+                        </h3>
+                        <p class="work-description">ブラウザで遊べるアクションゲーム</p>
+                        <span class="work-category">オリジナルゲーム</span>
+                    </div>
+                </div>
+
+                <div class="work-item reveal">
+                    <div class="work-info">
+                        <h3>
+                            <a href="https://antigravity-sns.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                SNS Antigravity
+                            </a>
+                        </h3>
+                        <p class="work-description">独自開発のSNSプラットフォーム</p>
+                        <span class="work-category">Webアプリケーション</span>
+                    </div>
+                </div>
+
+                <!-- 将来：クライアント実績はここに追加 -->
             </div>
+        </section>
 
-            <!-- Product Showcase: YUI -->
-            <div class="product-showcase reveal">
-                <h3 class="product-title">Featured Product</h3>
-                <div class="product-header">
-                    <img src="/yui_logo.jpg" alt="YUI Logo" class="product-logo" />
-                    <div class="product-info">
-                        <h4>YUI</h4>
-                        <p>New Application</p>
-                    </div>
-                </div>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <div class="contact-wrapper reveal">
+                    <p class="contact-intro">
+                        お仕事のご依頼・ご相談は、<br>以下のフォームより必要事項をご記入の上お問い合わせください。
+                    </p>
 
-                <div class="product-visuals">
-                    <div class="visual-item">
-                        <div class="image-wrapper">
-                            <img src="/yui_app.png" alt="YUI App Character" />
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎">
                         </div>
-                        <p class="visual-caption">App Version</p>
-                    </div>
-                    <div class="visual-item">
-                        <div class="image-wrapper">
-                            <img src="/yui_ar.png" alt="YUI AR Character" />
+
+                        <div class="form-group">
+                            <label for="company">貴社名</label>
+                            <input type="text" id="company" name="company" placeholder="株式会社〇〇">
                         </div>
-                        <p class="visual-caption">AR Device View<br><span class="caption-detail">(Right Shoulder
-                                Companion)</span></p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Product Showcase: BreakBlockBuild -->
-            <div class="product-showcase reveal" style="margin-top: 3rem;">
-                <h3 class="product-title">Game Application</h3>
-                <div class="product-header">
-                    <div class="product-info">
-                        <h4><a href="https://morikentiger.github.io/BreakBlockBuild/" target="_blank"
-                                rel="noopener noreferrer">BreakBlockBuild</a></h4>
-                        <p>Web Browser Game</p>
-                    </div>
-                </div>
-            </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
 
-            <!-- Product Showcase: SummonShogi -->
-            <div class="product-showcase reveal" style="margin-top: 3rem;">
-                <h3 class="product-title">Game Application</h3>
-                <div class="product-header">
-                    <div class="product-info">
-                        <h4><a href="https://morikentiger.github.io/SummonShogi/" target="_blank"
-                                rel="noopener noreferrer">召喚将棋 (SummonShogi)</a></h4>
-                        <p>Web Browser Game</p>
-                    </div>
-                </div>
-            </div>
+                        <div class="form-group">
+                            <label for="category">お問い合わせ項目 <span class="required">*</span></label>
+                            <div class="select-wrapper">
+                                <select id="category" name="category" required>
+                                    <option value="" disabled selected>選択してください</option>
+                                    <option value="Webサイト制作のご依頼">Webサイト制作のご依頼</option>
+                                    <option value="ゲーム開発のご相談">ゲーム開発のご相談</option>
+                                    <option value="デジタル化支援のご相談">デジタル化支援のご相談</option>
+                                    <option value="取材・コラボレーション">取材・コラボレーション</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                        </div>
 
-            <!-- Product Showcase: SNS Antigravity -->
-            <div class="product-showcase reveal" style="margin-top: 3rem;">
-                <h3 class="product-title">Social Network</h3>
-                <div class="product-header">
-                    <div class="product-info">
-                        <h4><a href="https://antigravity-sns.vercel.app/" target="_blank" rel="noopener noreferrer">SNS
-                                Antigravity</a></h4>
-                        <p>New SNS Platform</p>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </section>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="お問い合わせ内容をご記入ください"></textarea>
+                        </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-wrapper reveal">
-                <p class="contact-intro">
-                    お仕事のご依頼・ご相談は、<br>以下のフォームより必要事項をご記入の上お問い合わせください。
-                </p>
+                        <button type="submit" class="submit-button">
+                            <span>送信内容を確認する（メーラー起動）</span>
+                        </button>
+                    </form>
 
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">お名前 <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="company">貴社名</label>
-                        <input type="text" id="company" name="company" placeholder="株式会社〇〇">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">メールアドレス <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="example@email.com">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="category">お問い合わせ項目 <span class="required">*</span></label>
-                        <div class="select-wrapper">
-                            <select id="category" name="category" required>
-                                <option value="" disabled selected>選択してください</option>
-                                <option value="事業について">事業について</option>
-                                <option value="採用について">採用について</option>
-                                <option value="取材・講演依頼">取材・講演依頼</option>
-                                <option value="その他">その他</option>
-                            </select>
+                    <div class="contact-direct">
+                        <p>または直接のご連絡はこちら</p>
+                        <div class="contact-links">
+                            <a href="mailto:kuromoriken@gmail.com" class="contact-link-item">
+                                <span class="icon">✉</span> kuromoriken@gmail.com
+                            </a>
+                            <a href="https://x.com/kuromoriken" target="_blank" rel="noopener noreferrer"
+                                class="contact-link-item">
+                                <span class="icon">𝕏</span> @kuromoriken
+                            </a>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="6" required
-                            placeholder="お問い合わせ内容をご記入ください"></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button">
-                        <span>送信内容を確認する（メーラー起動）</span>
-                    </button>
-                </form>
-
-                <div class="contact-direct">
-                    <p>または直接のご連絡はこちら</p>
-                    <div class="contact-links">
-                        <a href="mailto:kuromoriken@gmail.com" class="contact-link-item">
-                            <span class="icon">✉</span> kuromoriken@gmail.com
-                        </a>
-                        <a href="https://x.com/kuromoriken" target="_blank" rel="noopener noreferrer"
-                            class="contact-link-item">
-                            <span class="icon">𝕏</span> @kuromoriken
-                        </a>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <p class="footer-founder">代表・森田健太</p>
-        <p>&copy; 2025 らいとすぴりっつ. All Rights Reserved.</p>
-    </footer>
+        <footer class="footer">
+            <p class="footer-founder">代表・森田健太（もりけん）｜日本在住</p>
+            <p>&copy; 2025 らいとすぴりっつ. All Rights Reserved.</p>
+        </footer>
     </div>
     <script type="module" src="/main.js"></script>
 </body>
